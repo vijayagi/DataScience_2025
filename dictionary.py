@@ -18,7 +18,7 @@ print('age:',student1.get('age'))  #get keyword to get the value
 #getting keys and values
 x=student1.keys()
 print('keys before adding adress:',x)
-student1['add']='hyd'
+student1['address']='hyd'
 print(student1)
 print('keys after adding adress:',x) #keys will change because it is the view of the dictionary
 y=student1.values()
@@ -30,14 +30,14 @@ if 'name' in student1:
     print(f'yes key values pair "name:{student1["name"]}"  is present in dictionary')
 
 #change items
-student1.update({'year':2025})
+student1.update({'year':2025,'sports':'cricket'})
 print('adding key "year" in student1',student1)
 student1['year']=2024
 print('changing value of key "year" in student1',student1)
 
 #delete items
-student1.pop('add')
-print('after dleting add with pop()',student1)
+student1.pop('address')
+print('after dleting address with pop()',student1)
 student1.popitem()
 print('after dleting last item with popitem()',student1)
 student1['year']=2025
