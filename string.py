@@ -24,7 +24,7 @@ print('remove whitespace',text2.strip())
 
 #split()function
 text3="i am,santhosh,how are you"
-print("splitting at ,",text3.split(","))
+print("removing leading and trailing white space",text3.split(","))
 
 #replace()function
 text5="dogs are cute"
